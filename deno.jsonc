@@ -25,7 +25,7 @@
 		"lineWidth": 80,
 		"indentWidth": 4,
 		"semiColons": false,
-		"proseWrap": "always",
+		"proseWrap": "preserve",
 		"singleQuote": true
 	},
 	"nodeModulesDir": true,
