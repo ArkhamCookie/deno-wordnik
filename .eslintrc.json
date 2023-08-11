@@ -1,0 +1,17 @@
+{
+  "root": true,
+  "extends": ["eslint:recommended", "standard"],
+	"env": {
+		"es6": true
+	},
+	"globals": {
+		"Deno": false
+	},
+  "rules": {
+    "indent": ["warn", "tab"],
+    "no-tabs": "off",
+    "no-unused-vars": ["warn", { "vars": "local", "args": "none"}],
+		"prefer-const": "warn",
+		"space-before-function-paren": ["error", "never"]
+  }
+}
