@@ -1,9 +1,14 @@
 {
+	"importMap": "",
+	"imports": {
+		"dotenv": "https://deno.land/std@0.191.0/dotenv/load.ts"
+	},
+	"exclude": [
+		"node_modules"
+	],
 	"lint": {
 		"include": [],
-		"exclude": [
-			"node_modules"
-		],
+		"exclude": [],
 		"rules": {
 			"tags": [
 				"recommended"
@@ -16,20 +21,25 @@
 		"include": [
 			"src/"
 		],
-		"exclude": [
-			"node_modules"
-		],
+		"exclude": [],
 		"useTabs": true,
 		"lineWidth": 80,
 		"indentWidth": 4,
 		"semiColons": false,
+		"proseWrap": "always",
 		"singleQuote": true
 	},
-	"tasks": {
-		"testEnvVars": "deno run ./src/tests/vaildate.js"
-	},
 	"nodeModulesDir": true,
-	"imports": {
-		"dotenv": "https://deno.land/std@0.191.0/dotenv/load.ts"
-	}
+	"vendor": false,
+	"tasks": {
+		"testEnvVars": "deno run --allow-read --allow-env --allow-net ./src/tests/vaildate.js"
+	},
+	"test": {
+		"include": [
+			"tests/",
+			"src/tests"
+		]
+	},
+	"bench": {},
+	"lock": true
 }
