@@ -1,6 +1,7 @@
 {
 	"imports": {
-		"dotenv": "https://deno.land/std@0.191.0/dotenv/load.ts"
+		"assert": "https://deno.land/std@0.198.0/assert/mod.ts",
+		"dotenv": "https://deno.land/std@0.198.0/dotenv/load.ts"
 	},
 	"exclude": [
 		"node_modules"
@@ -35,8 +36,7 @@
 	},
 	"test": {
 		"include": [
-			"tests/",
-			"src/tests"
+			"src/tests/*.js"
 		]
 	},
 	"bench": {},
