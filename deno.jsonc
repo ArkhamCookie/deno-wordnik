@@ -1,5 +1,4 @@
 {
-	"importMap": "",
 	"imports": {
 		"dotenv": "https://deno.land/std@0.191.0/dotenv/load.ts"
 	},
