@@ -17,6 +17,8 @@ deno.lock
 .cache
 .trash
 .DS_Store
+out/*
+!out/.gitkeep
 
 # conifgs
 .vscode/
