@@ -9,9 +9,26 @@
 	},
   "rules": {
     "indent": ["warn", "tab"],
+		"no-fallthrough": [
+			"warn", {
+				"allowEmptyCase": true
+			}
+		],
     "no-tabs": "off",
-    "no-unused-vars": ["warn", { "vars": "local", "args": "none"}],
+    "no-unused-vars": [
+			"warn", {
+				"vars": "local",
+				"varsIgnorePattern": "^_",
+				"args": "after-used"
+			}
+		],
 		"prefer-const": "warn",
-		"space-before-function-paren": ["error", "never"]
+		"space-before-function-paren": ["warn", "never"],
+		"yoda": [
+			"warn",
+			"never", {
+				"onlyEquality": true
+			}
+		]
   }
 }
