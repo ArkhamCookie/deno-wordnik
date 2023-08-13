@@ -22,9 +22,8 @@ Deno.test({
 	async fn(target, failOn, allowType, unreconized) {
 		/** Get Config + Flags */
 
+		/** @param {string} [flags] */
 		const flags = parse(Deno.args)
-
-		// target
 		if (flags.target) {
 			target = flags.target
 		} else if (flags.t) {
