@@ -23,7 +23,7 @@ const key = '?api_key=' + Deno.env.get('WORDNIK_KEY')
  * @param {boolean} [allowType.im] - allow IM Used response
  * @param {boolean} [allowType.deprecated] - allow deprecated responses
  * @param {boolean|intiger} [unreconized] - allow unreconized (or custom) responses
- * @param {string}
+ * @param {(string|Array)} [failOn] - set which statuses to fail on
 */
 
 Deno.test({
@@ -52,8 +52,7 @@ Deno.test({
 		const response = (await fetch(
 			base + target + key
 		))
-		// const status = response.status
-		const status = 305
+		const status = response.status
 		if (response) { await response.body.cancel() }
 
 		/**
