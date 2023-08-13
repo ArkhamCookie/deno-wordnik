@@ -6,6 +6,6 @@ import 'dotenv'
 /** Vaildate Config File */
 Deno.test(
 	'Test: API key value', () => {
-		assertExists(Deno.env.get('WORKNIK_KEY'), 'API key value is not set')
+		assertExists(Deno.env.get('WORDNIK_KEY'), 'API key value is not set')
 	}
 )
