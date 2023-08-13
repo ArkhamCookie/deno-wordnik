@@ -3,7 +3,8 @@
 
 # secrets
 .env*
-!.env.example
+!.env.defaults
+!.env.example*
 
 # package manager
 node_modules/
