@@ -96,56 +96,5 @@ Deno.test({
 			console.error('Unreconized Response Status:', status)
 			throw new AssertionError('Connection failed!\n' + response.statusText)
 		}
-
-		/* switch (true) {
-		case (isNaN(status)):
-			throw new AssertionError('Status: ' + response.status + 'is not a number!')
-		case (status === 200): // Successful
-			console.debug('Response: ' + status)
-			break
-		case (204 <= status <= 225): // Part successful
-			console.debug('Response: ' + response.statusText)
-			break
-
-		// Standard Error HTTP Responses
-		case (300 <= status <= 304 || status === 308): // Redirection messages
-			console.debug('Redirecting (' + status + ')... ')
-			// throw new AssertionError('Redirecting: ' + response.status)
-		case (400 <= status <= 417 || 421 <= status <= 426 || 428 <= status <= 429 || status === 451): // Client error responses
-			throw new AssertionError('Client error: ' + response.status)
-		case (500 <= status <= 508 || status === 511): // Server error responses
-			throw new AssertionError('Deprecated:' + response.status)
-
-		case (status === 207 || status === 208): // WebDAV Responses
-			console.debug('WebDAV Response, Code: ' + status)
-			if (allowType.webdav === true) {
-				console.debug()
-				break
-			}
-		case (status === 226): // IM Used
-			if (allowType.im === true) {
-				console.debug()
-				break
-			}
-		case (status === 418):
-			if (allowType.teapot) {
-				break
-			}
-			throw new AssertionError('Deprecated' + response.statusText)
-		case (status === 305 || status === 306 || status === 418 || status === 510):
-			if (allowType.deprecated === true) {
-				console.error('Deprecated status code: ' + status)
-				break
-			}
-			throw new AssertionError('Deprecated: ' + response.status)
-		default: // Unreconized
-			console.debug('Custom Response status?')
-			if (unreconized === true) { // will allow you to specify in the future
-				console.debug('Response Code: ' + status)
-				break
-			}
-			console.error('Unreconized Response Status: ' + status)
-			throw new AssertionError('Connection failed!\n' + response.statusText)
-		} */
 	}
 })
