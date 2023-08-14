@@ -78,6 +78,19 @@ Deno.test({
 		const status = response.status
 		if (response) { await response.body.cancel() }
 
+		/** Debugging Logs */
+		if (verbose) {
+			console.debug('flags:', Deno.args)
+			if (flags.T) {
+				console.debug('url:', url)
+			} else {
+				// console.debug(`url: ${base}%c${target}%c${key}`, 'font-weight: bold', 'font-weight: normal; text-decoration: line-through')
+				console.debug(`url: ${base}%c${target}%c?api_key=%c${Deno.env.get('WORDNIK_KEY')}`, 'font-weight: bold', 'font-weight: normal', 'text-decoration: line-through')
+			}
+			console.debug('allow:', allow)
+			console.debug()
+		}
+
 		/** Check Response Status */
 		switch (true) {
 		case (isNaN(status)):
