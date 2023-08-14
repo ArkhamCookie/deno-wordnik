@@ -54,24 +54,38 @@ Deno.test({
 		/* Handle Flags/Arguements ENDS */
 
 		/**
-		 * @param {Object} [allowType] - choose which special reponses to allow
- 		 * @param {boolean} [allowType.webdav] - allow WebDAV responses
- 		 * @param {boolean} [allowType.im] - allow IM Used response
- 		 * @param {boolean} [allowType.deprecated] - allow deprecated responses
+		 * @name allow config
+		 * @description Choose which types of responses to allow
+		 * @param {Object} [allow] - choose what reponses to allow
+		//  * @enum {boolean} [allow] - choose what reponses to allow
+ 		 * @param {boolean} [allow.webdav=false] - allow WebDAV responses
+ 		 * @param {boolean} [allow.im=false] - allow IM Used response
+ 		 * @param {boolean} [allow.deprecated=false] - allow deprecated responses
+		 * @param {boolean} [allow.redirect=true] - allow redirect responses
+		 * @param {boolean} [allow.client=false] - allow client error responses
+		 * @param {boolean} [allow.server=true] - allow server error responses
 		*/
-		if (allowType === undefined) {
-			allowType = {
+		if (!allow) {
+			allow = {
 				webdav: false,
 				im: false,
-				deprecated: false
+				deprecated: false,
+				redirect: true,
+				clientError: false,
+				serverError: true
 			}
-		} else {
-			let json = JSON.stringify(allowType)
-			json = JSON.parse(json)
-			console.debug('allowType:', json)
 		}
 
-		// Get Response
+		let json = JSON.stringify(allow)
+		json = JSON.parse(json)
+		allow = json
+
+		/* allow config ENDS */
+
+		/**
+		 * response
+		 * @alias fetch
+		 */
 		const response = (await fetch(
 			url
 		))
