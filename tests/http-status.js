@@ -113,7 +113,8 @@ Deno.test({
 		/** Success Statuses */
 		// Basic
 		case (status === 200): // Successful
-			console.debug('Successfully Connected')
+			// console.debug(status + ':', 'Successfully Connected')
+			console.debug(status + ':', response.statusText)
 			return true
 
 		case (status === 203): // Non-Authoritative Information
@@ -161,21 +162,21 @@ Deno.test({
 		// WebDAV Statuses
 		case (status === 207 || status === 208):
 			console.debug('WebDAV Response. Status:', status)
-			if (allowType.webdav === true) {
+			if (allow.webdav === true) {
 				break
 			}
 			throw new AssertionError('WebDAV')
 		// IM Used Status
 		case (status === 226):
 			console.debug(status + ':', response.statusText)
-			if (allowType.im === true) {
+			if (allow.im === true) {
 				break
 			}
 			throw new AssertionError('IM Used')
 		// I'm a teapot Status
 		case (status === 418):
 			console.debug(status + ':', response.statusText)
-			if (allowType.teapot === true) {
+			if (allow.teapot === true) {
 				break
 			}
 			throw new AssertionError("I'm a teapot")
@@ -185,7 +186,7 @@ Deno.test({
 			// console.error('Deprecated. Status: ', status)
 			console.error('Deprecated.')
 			console.error(status + ':', response.statusText)
-			if (allowType.deprecated === true) {
+			if (allow.deprecated === true) {
 				break
 			}
 			throw new AssertionError('Deprecated')
