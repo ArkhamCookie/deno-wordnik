@@ -41,16 +41,17 @@ Deno.test({
 			target = flags.target
 		} else if (flags.t) {
 			target = flags.t
-		} else {
+		} else if (!target) {
 			target = 'words.json/wordOfTheDay'
 		}
+		url = base + target + key
 
-		/** @param {(string|Array)} [failOn] */
-		if (failOn === undefined) {
-			failOn = {
-				content: false
-			}
+		// url (target override)
+		if (flags.T) {
+			url = flags.T
 		}
+
+		/* Handle Flags/Arguements ENDS */
 
 		/**
 		 * @param {Object} [allowType] - choose which special reponses to allow
@@ -72,7 +73,7 @@ Deno.test({
 
 		// Get Response
 		const response = (await fetch(
-			base + target + key
+			url
 		))
 		const status = response.status
 		if (response) { await response.body.cancel() }
