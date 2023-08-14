@@ -19,11 +19,24 @@ const key = '?api_key=' + Deno.env.get('WORDNIK_KEY')
 Deno.test({
 	name: 'Test: HTTP Status',
 	permissions: { read: true, env: true, net: true },
-	async fn(target, failOn, allowType, unreconized) {
-		/** Get Config + Flags */
-
-		/** @param {string} [flags] */
+	async fn(_httpStatus, target, allow, unreconized) {
+		/**
+		 * Handle Flags/Arguements
+		 * @param {string} [flags]
+		 * @param {boolean} [verbose] - enable debug logs
+		 * @param {string} [target] - where to make the request to
+		 * @param {string} [url] - set target to url (overrides target)
+		*/
 		const flags = parse(Deno.args)
+		let verbose
+		let url
+
+		// Verbose
+		if (flags.v || flags.verbose) {
+			verbose = true
+		}
+
+		// Target
 		if (flags.target) {
 			target = flags.target
 		} else if (flags.t) {
