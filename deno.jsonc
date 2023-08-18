@@ -1,7 +1,8 @@
 {
 	"imports": {
 		"assert": "https://deno.land/std@0.198.0/assert/mod.ts",
-		"dotenv": "https://deno.land/std@0.198.0/dotenv/load.ts"
+		"dotenv": "https://deno.land/std@0.198.0/dotenv/load.ts",
+		"flags": "https://deno.land/std@0.198.0/flags/mod.ts"
 	},
 	"exclude": [
 		"node_modules"
