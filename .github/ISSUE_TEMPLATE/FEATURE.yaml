@@ -10,13 +10,14 @@ labels:
 
 body:
 - type: checkboxes
+  id: prerequisites
   attributes:
-    label: Is there an existing issue for this?
-    description: Please search to see if an issue already exists for the feature you are requesting.
+    label: Prerequisites
+    description: Please answer the following questions.
     options:
-      - label: I have searched the existing issues.
+      - label: I have searched for [existing issues](https://github.com/ArkhamCookie/deno-wordnik/issues) that already report this problem, without success.
         required: true
-      - label: Would you be willing to help with this feature?
+      - label: I would be willing to help implement this feature.
         required: false
 
 - type: textarea
