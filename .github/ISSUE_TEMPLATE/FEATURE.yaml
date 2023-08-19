@@ -13,12 +13,14 @@ body:
   id: prerequisites
   attributes:
     label: Prerequisites
-    description: Please answer the following questions.
+    description: Please make sure you have done all of the following.
     options:
+      - label: I have read the [Contributing Guidelines](https://github.com/ArkhamCookie/deno-wordnik/docs/CONTRIBUTING.md#creating-an-issue)
+        required: true
+      - label: I agree to follow the [Code of Conduct](https://github.com/ArkhamCookie/deno-wordnik/docs/CODE_OF_CONDUCT.md)
+        required: true
       - label: I have searched for [existing issues](https://github.com/ArkhamCookie/deno-wordnik/issues) that already report this problem, without success.
         required: true
-      - label: I would be willing to help implement this feature.
-        required: false
 
 - type: textarea
   attributes:
@@ -27,15 +29,31 @@ body:
   validations:
     required: true
 
-- type: textarea
+- type: input
   attributes:
     label: Is this feature realted to a problem?
+    value: "No"
 - type: textarea
   attributes:
     label: Describe the Use Case
     description: A clear and concise use case for this feature.
+  validations:
+    required: true
 
+- type: checkboxes
+  attributes:
+    label: I would be willing to help implement this feature. (Not required)
+    options:
+      - label: Answer
+        required: false
 - type: textarea
   attributes:
     label: Anything else?
-    description: List any other information that is relevant to your issue. Stack traces, related issues, suggestions on how to implement, Stack Overflow links, forum links, etc.
+    description: List any other information relevant to your issue.
+- type: markdown
+  attributes:
+    value: |
+      - Related issues
+      - Suggestions on how to implement
+      - External Links
+      - etc.
