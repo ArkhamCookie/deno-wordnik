@@ -3,3 +3,4 @@
  */
 
 export * from './lib/config.js'
+export * from './lib/words.js'
