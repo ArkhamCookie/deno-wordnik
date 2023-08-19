@@ -2,7 +2,7 @@ name: Bug Report
 description: Create a bug report to help improve deno-wordnik.
 title: "[BUG]: "
 labels:
-  - "Bug"
+  - "bug"
 # projects:
 # assignees:
 
