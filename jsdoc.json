@@ -4,7 +4,7 @@
 	"source": {
 		"includePattern": ".+\\.js(doc|x)?$",
 		"excludePattern": "(^|\\/|\\\\)_",
-		"include": ["src/", "src/tests/"],
+		"include": ["src/", "README.md"],
 		"exclude": ["node_modules/", "out/", "assets/", ".github/", "src/mod.js"]
 	},
 	"sourceType": "module",
@@ -22,7 +22,7 @@
 		"default": {
 			"staticFiles": {
 				"include": [
-					"./assets"
+					"./static/assets"
 				]
 			}
 		}
