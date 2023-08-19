@@ -2,9 +2,8 @@ name: Feature Request
 description: Request a feature
 title: "[FEAT]: "
 labels:
-  - "Feature"
-  - "Pending Review"
-  - "Enhancements"
+  - "enhancement"
+  - "pending review"
 # projects:
 # assignees:
 
