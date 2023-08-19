@@ -19,6 +19,7 @@ export function random() {
 /**
  * Word of the Day
  * @param {string} [date] - Fetches by date (in yyyy-MM-dd format)
+ * @returns {json} response
  */
 export async function wordOfTheDay(date) {
 	let response
