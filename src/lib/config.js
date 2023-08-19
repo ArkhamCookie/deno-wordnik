@@ -37,8 +37,8 @@ export function getVersion() {
 
 /**
  * Build Target Util
- * @param {string} target
- * @returns {string} build
+ * @param {string} target - what api operation to use
+ * @returns {string} build - url to fetch
  */
 export function buildTarget(target) {
 	const base = 'https://api.wordnik.com/'
