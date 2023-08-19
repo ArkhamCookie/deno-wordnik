@@ -1,0 +1,40 @@
+name: Feature Request
+description: Request a feature
+title: "[FEAT]: "
+labels:
+  - "Feature"
+  - "Pending Review"
+  - "Enhancements"
+# projects:
+# assignees:
+
+body:
+- type: checkboxes
+  attributes:
+    label: Is there an existing issue for this?
+    description: Please search to see if an issue already exists for the feature you are requesting.
+    options:
+      - label: I have searched the existing issues.
+        required: true
+      - label: Would you be willing to help with this feature?
+        required: false
+
+- type: textarea
+  attributes:
+    label: Describe the Feature Request
+    description: A clear and concise description of what the feature does.
+  validations:
+    required: true
+
+- type: textarea
+  attributes:
+    label: Is this feature realted to a problem?
+- type: textarea
+  attributes:
+    label: Describe the Use Case
+    description: A clear and concise use case for this feature.
+
+- type: textarea
+  attributes:
+    label: Anything else?
+    description: List any other information that is relevant to your issue. Stack traces, related issues, suggestions on how to implement, Stack Overflow links, forum links, etc.
