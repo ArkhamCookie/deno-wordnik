@@ -18,3 +18,26 @@ export function getKey() {
 		console.error('No API key found!')
 	}
 }
+
+export function getVersion() {
+	if (Deno.env.has('API_VERSION')) {
+		const version = 'v' + Deno.env.get('API_VERSION') + '/'
+		return version
+	} else if (!Deno.env.has('API_VERSION')) {
+		const version = 'v4/' // update when new api version comes out
+		return version
+	}
+}
+
+export function buildTarget(target) {
+	const base = 'https://api.wordnik.com/'
+	const version = getVersion()
+	const key = getKey()
+
+	if (!target) {
+		target = '/words.json/wordOfTheDay'
+	}
+
+	const build = base + version + target + key
+	return build
+}
