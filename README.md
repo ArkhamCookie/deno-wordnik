@@ -7,4 +7,4 @@ A [Deno](https://deno.land) library/module for [Wordnik](https://wordnik.com)'s 
 <!-- ## Attributions -->
 <!-- ### [Wordnik](https://wordnik.com) -->
 
-[![Powered by Wordnik](/assets/poweredbyWordnik.png)](https://wordnik.com)
+[![Powered by Wordnik](/static/assets/poweredbyWordnik.png)](https://wordnik.com)
