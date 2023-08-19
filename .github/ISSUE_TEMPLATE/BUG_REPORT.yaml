@@ -19,6 +19,8 @@ body:
         required: true
       - label: This is **not** a support question/issue. *See [asking for help](https://github.com/ArkhamCookie/deno-wordnik/docs/SUPPORT.md)
         required: true
+      - label: This is **not** a security vulnerability. *See [security policy](https://github.com/ArkhamCookie/deno-wordnik/security/policy)
+        required: true
       - label: I have searched for [existing issues](https://github.com/ArkhamCookie/deno-wordnik/issues) that already report this problem, without success.
         required: true
 
