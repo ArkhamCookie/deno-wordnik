@@ -12,7 +12,7 @@ import 'dotenv'
 */
 export function getKey() {
 	if (Deno.env.has('WORDNIK_KEY')) {
-		const key = '?api_key=' + Deno.env.get('WORDNIK_KEY')
+		const key = 'api_key=' + Deno.env.get('WORDNIK_KEY')
 		return key
 	} else {
 		console.error('No API key found!')
@@ -35,7 +35,7 @@ export function buildTarget(target) {
 	const key = getKey()
 
 	if (!target) {
-		target = '/words.json/wordOfTheDay'
+		target = '/words.json/wordOfTheDay?'
 	}
 
 	const build = base + version + target + key
