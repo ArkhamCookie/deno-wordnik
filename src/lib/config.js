@@ -4,6 +4,8 @@ import 'dotenv'
  * Module to setup your config
  * @module @worknik/conifg
  * @exports getKey - auth suffex + API key
+ * @exports getVersion - get API version
+ * @exports buildTarget - helper function to get target url
  */
 
 /**
@@ -19,6 +21,10 @@ export function getKey() {
 	}
 }
 
+/**
+ * Get API Version
+ * @returns {string} version
+*/
 export function getVersion() {
 	if (Deno.env.has('API_VERSION')) {
 		const version = 'v' + Deno.env.get('API_VERSION') + '/'
@@ -29,6 +35,11 @@ export function getVersion() {
 	}
 }
 
+/**
+ * Build Target Util
+ * @param {string} target
+ * @returns {string} build
+ */
 export function buildTarget(target) {
 	const base = 'https://api.wordnik.com/'
 	const version = getVersion()
