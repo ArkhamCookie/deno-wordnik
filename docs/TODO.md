@@ -2,6 +2,11 @@
 
 ## Wordnik's API Coverage
 
+- [ ] Setup project
+  - [ ] roadmap
+  - [ ] checklist
+- [ ] Coverage
+
 ## [Continuous Integration](https://deno.land/manual/advanced/continuous_integration)
 
 - [ ] [git hooks](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks)
@@ -31,7 +36,7 @@
   - [ ] build
   - [ ] serve
 - [ ] cache
-- [ ] clean
+- [x] clean
 - [ ] prepare
 
 ### Releases
@@ -44,6 +49,9 @@
   - [ ] [Automated release notes](https://docs.github.com/en/repositories/releasing-projects-on-github/automatically-generated-release-notes)
   - [x] Connect to [deno.land](https://deno.land/x)
 - [ ] [npm package](https://github.com/denoland/dnt) (?)
+  - [x] [dnt script](https://github.com/denoland/dnt#setup)
+  - [ ] [SemVer](https://semver.org)
+  - [ ] Connect to GitHub releases
 
 ### GitHub Actions
 
