@@ -19,8 +19,11 @@ deno.lock
 .cache
 .trash
 .DS_Store
+
+# output
 out/*
 !out/.gitkeep
+npm/
 
 # conifgs
 .vscode/
