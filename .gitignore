@@ -4,7 +4,8 @@
 # secrets
 .env*
 !.env.defaults
-!.env.example*
+!.env.example
+!.env.test*
 
 # package manager
 node_modules/
@@ -18,8 +19,10 @@ deno.lock
 .cache
 .trash
 .DS_Store
-out/*
-!out/.gitkeep
+
+# output
+out/
+npm/
 
 # conifgs
 .vscode/

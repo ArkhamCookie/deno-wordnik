@@ -16,13 +16,13 @@
 		],
     "no-tabs": "off",
     "no-unused-vars": [
-			"warn", {
+			"off", {
 				"vars": "local",
 				"varsIgnorePattern": "^_",
 				"args": "after-used"
 			}
 		],
-		"prefer-const": "warn",
+		"prefer-const": "off",
 		"space-before-function-paren": ["warn", "never"],
 		"yoda": [
 			"warn",
