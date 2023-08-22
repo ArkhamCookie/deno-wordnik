@@ -1,1 +1,1 @@
-./src/README.md
+./lib/README.md
