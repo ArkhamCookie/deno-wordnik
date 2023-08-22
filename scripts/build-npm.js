@@ -8,6 +8,8 @@ await build({
 	shims: {
 		deno: true
 	},
+	packageManager: 'pnpm',
+	importMap: 'deno.jsonc',
 	package: {
 		name: 'deno-wordnik',
 		version: '0.0.0',
