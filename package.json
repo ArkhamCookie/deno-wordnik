@@ -3,14 +3,14 @@
   "version": "1.0.0",
   "description": "A Deno library/module for Wordnik's API",
   "main": "./src/index.js",
-	"type": "module",
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/ArkhamCookie/deno-wordnik.git"
-	},
-	"bugs": {
-			"url": "https://github.com/ArkhamCookie/deno-wordnik/issues"
-	},
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArkhamCookie/deno-wordnik.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ArkhamCookie/deno-wordnik/issues"
+  },
   "scripts": {
     "http:test": "./src/tests/vaildate.js",
     "clean": "rm -r ./out/*",
@@ -23,7 +23,7 @@
     "eslint": "^8.47.0",
     "eslint-config-standard": "^17.1.0",
     "eslint-plugin-import": "^2.28.1",
-    "eslint-plugin-n": "^16.0.1",
+    "eslint-plugin-n": "^16.0.2",
     "eslint-plugin-promise": "^6.1.1",
     "jsdoc": "^4.0.2"
   }
