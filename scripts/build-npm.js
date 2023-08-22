@@ -10,7 +10,7 @@ await build({
 	},
 	package: {
 		name: 'deno-wordnik',
-		version: Deno.args[0],
+		version: '0.0.0',
 		description: '',
 		license: 'AGPL-3.0-or-later',
 		repository: {
