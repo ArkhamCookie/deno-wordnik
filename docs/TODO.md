@@ -69,7 +69,7 @@
 - [ ] [setup templates](https://jsdoc.app/about-configuring-default-template.html)
 - [ ] css styling
 - [ ] [setup tutorials](https://jsdoc.app/about-tutorials.html)
-- [ ] [add examples](https://jsdoc.app/about-tutorials.html) (?)
+- [ ] [add examples](https://jsdoc.app/tags-example.html) (?)
 
 ### Documenation Site
 
