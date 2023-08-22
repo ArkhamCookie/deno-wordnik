@@ -13,8 +13,8 @@
   },
   "scripts": {
     "http:test": "./src/tests/vaildate.js",
-    "clean": "rm -r ./out/*",
-    "jsdoc": "npm run clean ; jsdoc ./src --configure ./jsdoc.json --destination ./out/"
+    "clean": "rm -r ./static/out",
+    "jsdoc": "npm run clean ; jsdoc ./src --configure ./jsdoc.json --destination ./static/out/"
   },
   "keywords": [],
   "author": "ArkhamCookie <npm@mail.theuntitledproject.dev> (https://theuntitledproject.dev)",

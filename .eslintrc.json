@@ -16,7 +16,7 @@
 		],
     "no-tabs": "off",
     "no-unused-vars": [
-			"warn", {
+			"off", {
 				"vars": "local",
 				"varsIgnorePattern": "^_",
 				"args": "after-used"

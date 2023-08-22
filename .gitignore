@@ -21,7 +21,7 @@ deno.lock
 .DS_Store
 
 # output
-out/*
+**/out/*
 !out/.gitkeep
 npm/
 
