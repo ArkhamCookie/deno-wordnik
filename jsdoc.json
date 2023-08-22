@@ -5,7 +5,7 @@
 		"includePattern": ".+\\.js(doc|x)?$",
 		"excludePattern": "(^|\\/|\\\\)_",
 		"include": ["src/", "README.md"],
-		"exclude": ["node_modules/", "out/", "assets/", ".github/", "src/mod.js"]
+		"exclude": ["node_modules/", "out/", "assets/", ".github/"]
 	},
 	"sourceType": "module",
 	"tags": {
