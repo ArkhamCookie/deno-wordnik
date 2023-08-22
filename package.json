@@ -3,6 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "./src/index.js",
+	"type": "module",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ArkhamCookie/deno-wordnik.git"
+	},
+	"bugs": {
+			"url": "https://github.com/ArkhamCookie/deno-wordnik/issues"
+	},
   "scripts": {
     "test": "./src/tests/vaildate.js",
     "clean": "rm -r ./out/*",
