@@ -13,7 +13,7 @@ await build({
 	package: {
 		name: 'deno-wordnik',
 		version: '0.0.0',
-		description: '',
+		description: "A Deno library/module for Wordnik's API",
 		license: 'AGPL-3.0-or-later',
 		repository: {
 			type: 'git',

@@ -1,7 +1,7 @@
 {
   "name": "wordnik-api-lib",
   "version": "1.0.0",
-  "description": "",
+  "description": "A Deno library/module for Wordnik's API",
   "main": "./src/index.js",
 	"type": "module",
 	"repository": {
@@ -12,7 +12,7 @@
 			"url": "https://github.com/ArkhamCookie/deno-wordnik/issues"
 	},
   "scripts": {
-    "test": "./src/tests/vaildate.js",
+    "http:test": "./src/tests/vaildate.js",
     "clean": "rm -r ./out/*",
     "jsdoc": "npm run clean ; jsdoc ./src --configure ./jsdoc.json --destination ./out/"
   },
