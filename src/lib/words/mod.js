@@ -3,3 +3,6 @@
  * @module @wordnik/words
  *
  */
+
+export * from './random.js'
+export * from './wordOfTheDay.js'
