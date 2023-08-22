@@ -8,6 +8,7 @@ await build({
 	shims: {
 		deno: true
 	},
+	test: false,
 	scriptModule: false,
 	packageManager: 'pnpm',
 	importMap: 'deno.jsonc',
