@@ -33,6 +33,7 @@
 	"nodeModulesDir": true,
 	"vendor": false,
 	"tasks": {
+		"clean": "rm -r ./npm ; rm -r ./static/out/*",
 		"testEnvVars": "deno run --allow-read --allow-env --allow-net ./src/tests/vaildate.js"
 	},
 	"test": {
