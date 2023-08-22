@@ -1,8 +1,6 @@
 import 'dotenv'
 
-/**
- * Utils to setup your config
- */
+/** Utils to setup your config */
 
 /**
  * Get API Key
