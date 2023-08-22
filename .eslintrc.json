@@ -22,7 +22,7 @@
 				"args": "after-used"
 			}
 		],
-		"prefer-const": "warn",
+		"prefer-const": "off",
 		"space-before-function-paren": ["warn", "never"],
 		"yoda": [
 			"warn",
