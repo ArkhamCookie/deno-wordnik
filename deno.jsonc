@@ -5,7 +5,8 @@
 		"flags": "https://deno.land/std@0.198.0/flags/mod.ts"
 	},
 	"exclude": [
-		"node_modules"
+		"**/node_modules/",
+		"**/out/"
 	],
 	"lint": {
 		"include": [],
