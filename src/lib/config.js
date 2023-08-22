@@ -1,11 +1,7 @@
 import 'dotenv'
 
 /**
- * Module to setup your config
- * @module @worknik/conifg
- * @exports getKey - auth suffex + API key
- * @exports getVersion - get API version
- * @exports buildTarget - helper function to get target url
+ * Utils to setup your config
  */
 
 /**
