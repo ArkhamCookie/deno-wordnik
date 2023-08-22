@@ -4,4 +4,4 @@
  */
 
 export * from './lib/config.js'
-export * from './lib/words.js'
+export * from './lib/words/mod.js'
