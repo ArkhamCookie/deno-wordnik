@@ -12,7 +12,7 @@
     "url": "https://github.com/ArkhamCookie/deno-wordnik/issues"
   },
   "scripts": {
-    "http:test": "./src/tests/vaildate.js",
+    "http:test": "./tests/http-status.js",
     "clean": "rm -r ./static/out",
     "jsdoc": "npm run clean ; jsdoc --configure ./jsdoc.json --destination ./static/out/"
   },
