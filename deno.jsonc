@@ -1,8 +1,8 @@
 {
 	"imports": {
-		"assert": "https://deno.land/std@0.198.0/assert/mod.ts",
-		"dotenv": "https://deno.land/std@0.198.0/dotenv/load.ts",
-		"flags": "https://deno.land/std@0.198.0/flags/mod.ts"
+		"assert": "https://deno.land/std@0.203.0/assert/mod.ts",
+		"dotenv": "https://deno.land/std@0.203.0/dotenv/load.ts",
+		"flags": "https://deno.land/std@0.203.0/flags/mod.ts"
 	},
 	"exclude": [
 		"**/node_modules/",
@@ -21,7 +21,9 @@
 	},
 	"fmt": {
 		"include": [
-			"src/"
+			"lib/",
+			"scripts/",
+			"tests/"
 		],
 		"exclude": [],
 		"useTabs": true,
@@ -36,11 +38,12 @@
 	"tasks": {
 		"clean": "rm -r ./npm ; rm -r ./static/out/*",
 		"npm": "deno run --allow-all ./scripts/build-npm.js",
-		"testEnvVars": "deno run --allow-read --allow-env --allow-net ./src/tests/vaildate.js"
+		"testEnvVars": "deno run --allow-read --allow-env --allow-net ./lib/tests/config.js"
 	},
 	"test": {
 		"include": [
-			"src/tests/*.js"
+			"./tests/*.js",
+			"./lib/tests/*.js"
 		]
 	},
 	"bench": {},

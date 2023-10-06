@@ -2,7 +2,7 @@
   "name": "wordnik-api-lib",
   "version": "1.0.0",
   "description": "A Deno library/module for Wordnik's API",
-  "main": "./src/index.js",
+  "main": "./lib/mod.js",
   "type": "module",
   "repository": {
     "type": "git",
@@ -12,7 +12,7 @@
     "url": "https://github.com/ArkhamCookie/deno-wordnik/issues"
   },
   "scripts": {
-    "http:test": "./src/tests/vaildate.js",
+    "http:test": "./tests/http-status.js",
     "clean": "rm -r ./static/out",
     "jsdoc": "npm run clean ; jsdoc --configure ./jsdoc.json --destination ./static/out/"
   },
@@ -20,10 +20,10 @@
   "author": "ArkhamCookie <npm@mail.theuntitledproject.dev> (https://theuntitledproject.dev)",
   "license": "AGPL-3.0-or-later",
   "devDependencies": {
-    "eslint": "^8.47.0",
+    "eslint": "^8.51.0",
     "eslint-config-standard": "^17.1.0",
     "eslint-plugin-import": "^2.28.1",
-    "eslint-plugin-n": "^16.0.2",
+    "eslint-plugin-n": "^16.1.0",
     "eslint-plugin-promise": "^6.1.1",
     "jsdoc": "^4.0.2"
   }
