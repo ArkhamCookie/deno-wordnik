@@ -2,7 +2,7 @@
   "name": "wordnik-api-lib",
   "version": "1.0.0",
   "description": "A Deno library/module for Wordnik's API",
-  "main": ".lib/mod.js",
+  "main": "./lib/mod.js",
   "type": "module",
   "repository": {
     "type": "git",
