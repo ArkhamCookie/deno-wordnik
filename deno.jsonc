@@ -38,7 +38,10 @@
 	"tasks": {
 		"clean": "rm -r ./npm ; rm -r ./static/out/*",
 		"npm": "deno run --allow-all ./scripts/build-npm.js",
-		"testEnvVars": "deno run --allow-read --allow-env --allow-net ./lib/tests/config.js"
+
+		"test:config": "deno test --allow-read --allow-env --allow-net --filter \"config: \"",
+		"test:word": "deno test --allow-read --allow-env --allow-net --filter \"word: \"",
+		"test:words": "deno test --allow-read --allow-env --allow-net --filter \"words: \""
 	},
 	"test": {
 		"include": [
