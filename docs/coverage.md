@@ -28,4 +28,4 @@
 | [`/randomWords`](https://developer.wordnik.com/docs#!/words/getRandomWords) | Returns an array of random WordObjects | [ ] |
 | [`/reverseDictionary`](https://developer.wordnik.com/docs#!/words/reverseDictionary) | Reverse dictionary search | [ ] |
 | [`/search/{query}`](https://developer.wordnik.com/docs#!/words/searchWords) | Searches words | [ ] |
-| [`/wordOfTheDay`](https://developer.wordnik.com/docs#!/words/getWordOfTheDay) | Returns a specific WordOfTheDay | [ ] |
+| [`/wordOfTheDay`](https://developer.wordnik.com/docs#!/words/getWordOfTheDay) | Returns a specific WordOfTheDay | [x] |
