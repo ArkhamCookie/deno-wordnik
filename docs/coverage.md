@@ -24,7 +24,7 @@
 
 | endpoint | operation | covered |
 | --- | --- | --- |
-| [`/randomWord`](https://developer.wordnik.com/docs#!/words/getRandomWord) | Returns a single random WordObject | [ ] |
+| [`/randomWord`](https://developer.wordnik.com/docs#!/words/getRandomWord) | Returns a single random WordObject | [x] |
 | [`/randomWords`](https://developer.wordnik.com/docs#!/words/getRandomWords) | Returns an array of random WordObjects | [ ] |
 | [`/reverseDictionary`](https://developer.wordnik.com/docs#!/words/reverseDictionary) | Reverse dictionary search | [x] |
 | [`/search/{query}`](https://developer.wordnik.com/docs#!/words/searchWords) | Searches words | [x] |
