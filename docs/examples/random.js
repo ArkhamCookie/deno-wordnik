@@ -13,7 +13,14 @@ console.log(await randomWord({
 
 /** Examples for randomWords() */
 
+let words
+
 console.log(await randomWords({}))
 
-const words = await randomWords({})
+words = await randomWords({})
 console.log(words[0])
+
+words = await randomWords({
+	sortBy: 'alpha'
+})
+console.log(words)
