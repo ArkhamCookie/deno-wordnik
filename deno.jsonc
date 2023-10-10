@@ -45,7 +45,6 @@
 	},
 	"test": {
 		"include": [
-			"./tests/*.js",
 			"./lib/tests/*.js"
 		]
 	},
