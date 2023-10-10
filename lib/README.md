@@ -8,7 +8,10 @@ A [Deno](https://deno.land) library/module for [Wordnik](https://wordnik.com)'s 
 
 This module is very early in development and doesn't even have most of the api covered.
 
-For the endpoints currently covered, see [coverage](/docs/coverage.md).
+### Endpoint Coverage
+
+For the endpoints currently covered, see [coverage](/docs/coverage.md)
+or the [API Coverage Board](https://github.com/users/ArkhamCookie/projects/4/views/3) in the [deno-wordnik Project](https://github.com/users/ArkhamCookie/projects/4).
 
 ## Contributing
 

@@ -2,12 +2,14 @@
 
 ## Wordnik's API Coverage
 
-- [ ] Setup project
+- [x] Setup project
   - [ ] roadmap
-  - [ ] checklist
-- [ ] Coverage
+  - [x] checklist
+- [x] Coverage
 
 ## [Continuous Integration](https://deno.land/manual/advanced/continuous_integration)
+
+### Git Hooks
 
 - [ ] [git hooks](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks)
   - [ ] [commitlint](https://commitlint.js.org)
@@ -65,11 +67,11 @@
 
 ### JSDoc
 
-- [ ] [jsdoc.json](https://jsdoc.app/about-configuring-jsdoc.html)
+- [x] [jsdoc.json](https://jsdoc.app/about-configuring-jsdoc.html)
 - [ ] [setup templates](https://jsdoc.app/about-configuring-default-template.html)
 - [ ] css styling
 - [ ] [setup tutorials](https://jsdoc.app/about-tutorials.html)
-- [ ] [add examples](https://jsdoc.app/tags-example.html) (?)
+- [x] [add examples](https://jsdoc.app/tags-example.html) (?)
 
 ### Documenation Site
 
@@ -87,12 +89,15 @@
 
 #### [Templates](https://github.com/devspace/awesome-github-templates)
 
-- [ ] [Issue templates](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-issue-forms)
-  - [x] Issue config file
-  - [x] Bug report
-  - [ ] Support question (?)
-  - [x] Feature request
 - [ ] [PR Templates](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/creating-a-pull-request-template-for-your-repository)
+
+#### [Issue Templates](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-issue-forms)
+
+- [x] Issue config file
+- [x] Bug report
+- [x] Feature request
+
+- [ ] Support question (?)
 
 <!-- --- -->
 
