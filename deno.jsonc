@@ -22,8 +22,7 @@
 	"fmt": {
 		"include": [
 			"lib/",
-			"scripts/",
-			"tests/"
+			"scripts/"
 		],
 		"exclude": [],
 		"useTabs": true,
@@ -45,7 +44,6 @@
 	},
 	"test": {
 		"include": [
-			"./tests/*.js",
 			"./lib/tests/*.js"
 		]
 	},
