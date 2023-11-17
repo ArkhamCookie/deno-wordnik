@@ -18,7 +18,7 @@
 | [`/{word}/pronunciations`](https://developer.wordnik.com/docs#!/word/getTextPronunciations) | Returns text pronunciations for a given word | [ ] |
 | [`/{word}/relatedWords`](https://developer.wordnik.com/docs#!/word/getRelatedWords) | Given a word as a string, returns relationships from the Word Graph | [ ] |
 | [`/{word}/scrabbleScore`](https://developer.wordnik.com/docs#!/word/getScrabbleScore) | Returns the Scrabble score for a word | [x] |
-| [`/{word}/topExample`](https://developer.wordnik.com/docs#!/word/getTopExample) | Returns a top example for a word | [ ] |
+| [`/{word}/topExample`](https://developer.wordnik.com/docs#!/word/getTopExample) | Returns a top example for a word | [x] |
 
 ### [`/words.json`](https://developer.wordnik.com/docs#/words)
 
