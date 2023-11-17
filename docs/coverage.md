@@ -12,7 +12,7 @@
 | [`/{word}/definitions`](https://developer.wordnik.com/docs#!/word/getDefinitions) | Returns definitions for a word | [x] |
 | [`/{word}/etymologies`](https://developer.wordnik.com/docs#!/word/getEtymologies) | Fetches etymology data | [ ] |
 | [`/{word}/examples`](https://developer.wordnik.com/docs#!/word/getExamples) | Returns examples for a word | [x] |
-| [`/{word}/frequency`](https://developer.wordnik.com/docs#!/word/getWordFrequency) | Returns word usage over time | [ ] |
+| [`/{word}/frequency`](https://developer.wordnik.com/docs#!/word/getWordFrequency) | Returns word usage over time | [x] |
 | [`/{word}/hyphenation`](https://developer.wordnik.com/docs#!/word/getHyphenation) | Returns syllable information for a word | [ ] |
 | [`/{word}/phrases`](https://developer.wordnik.com/docs#!/word/getPhrases) | Fetches bi-gram phrases for a word | [ ] |
 | [`/{word}/pronunciations`](https://developer.wordnik.com/docs#!/word/getTextPronunciations) | Returns text pronunciations for a given word | [ ] |
