@@ -8,7 +8,7 @@
 
 | endpoint | operation | covered |
 | --- | --- | --- |
-| [`/{word}/audio`](https://developer.wordnik.com/docs#!/word/getAudio) | Fetches audio metadata for a word | [ ] |
+| [`/{word}/audio`](https://developer.wordnik.com/docs#!/word/getAudio) | Fetches audio metadata for a word | [x] |
 | [`/{word}/definitions`](https://developer.wordnik.com/docs#!/word/getDefinitions) | Returns definitions for a word | [ ] |
 | [`/{word}/etymologies`](https://developer.wordnik.com/docs#!/word/getEtymologies) | Fetches etymology data | [ ] |
 | [`/{word}/examples`](https://developer.wordnik.com/docs#!/word/getExamples) | Returns examples for a word | [x] |
