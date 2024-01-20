@@ -46,7 +46,7 @@
   - [ ] [Automated release notes](https://docs.github.com/en/repositories/releasing-projects-on-github/automatically-generated-release-notes)
   - [x] Connect to [deno.land](https://deno.land/x)
 - [ ] [npm package](https://github.com/denoland/dnt) (?)
-  - [x] [dnt script](https://github.com/denoland/dnt#setup)
+  - [ ] [dnt script](https://github.com/denoland/dnt#setup)
   - [ ] [SemVer](https://semver.org)
   - [ ] Connect to GitHub releases
 
