@@ -32,14 +32,9 @@
 - [commitlint.io](https://commitlint.io)
 -->
 
-### [Deno Tasks](https://deno.land/manual/tools/task_runner)
+### Deno Tasks
 
-- [ ] [lume](https://lume.land/docs/overview/installation/#setup-lume)
-  - [ ] build
-  - [ ] serve
-- [ ] cache
 - [x] clean
-- [ ] prepare
 
 ### Releases
 
