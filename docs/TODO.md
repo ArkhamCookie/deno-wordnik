@@ -52,29 +52,17 @@
 
 ### GitHub Actions
 
-- [ ] [denopendabot](https://github.com/hasundue/denopendabot)
-- [ ] [setup-deno](https://github.com/denoland/setup-deno)
-- [ ] [Velociraptor](https://velociraptor.run/docs/github-actions) (?)
-- [ ] [semantic-release](https://semantic-release.gitbook.io/semantic-release/usage/ci-configuration) (?)
-- [ ] eslint (?)
+- [ ] [Velociraptor](https://velociraptor.run/docs/github-actions)
 
 ## Documentation
 
 ### JSDoc
 
 - [x] [jsdoc.json](https://jsdoc.app/about-configuring-jsdoc.html)
-- [ ] [setup templates](https://jsdoc.app/about-configuring-default-template.html)
 - [ ] css styling
 - [ ] [setup tutorials](https://jsdoc.app/about-tutorials.html)
-- [x] [add examples](https://jsdoc.app/tags-example.html) (?)
 
-### Documenation Site
-
-- [ ] convert jsdoc to markdown[^1]
-  - [jsdoc2md](https://github.com/jsdoc2md/jsdoc-to-markdown)
-  - [deno doc](https://github.com/denoland/deno_doc/blob/main/js/README.md)
-  - [remark](https://github.com/remarkjs/remark)
-- [ ] [lume](https://lume.land)
+#### [Examples](https://jsdoc.app/tags-example.html)
 
 ### GitHub Communities Tools
 
@@ -91,9 +79,3 @@
 - [x] Issue config file
 - [x] Bug report
 - [x] Feature request
-
-- [ ] Support question (?)
-
-<!-- --- -->
-
-[^1]: [inspiration](https://gist.github.com/KevinAst/7e12648245ff2a8e9c1557135014b933)
